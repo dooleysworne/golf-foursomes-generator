@@ -11,7 +11,7 @@ http://edge.byethost18.com/demo/
 
 All you have to do is download the files in this collection, place them in a directory on a server, make the players.txt file writeable by the server and you're in business. If you uncomment the first line in the manage.php file, you can turn on a very basic user authorization function that will challenge anyone who tries to manipulate the players list. The default username is "disc" and the default password is "golf".
 
-These can be changed by editing the userauth.php script.
+The username and password can be changed by editing the userauth.php script.
 
 Managing the players list is done by clicking the hyperlinked asterisk at the bottom left of the foursomes.php screen.
 
