@@ -19,6 +19,5 @@ As a bonus, a doubles team randomizer is included. If there happens to be an odd
 
 We are trying to raise money to replace the 15+ year old baskets at the course in our local park. If you'd like to help us by kicking in a small contribution toward that goal, please consider a PayPal donation.
 
-[![](https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif)](https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=weltong01%40gmail%2ecom&lc=US&item_name=EDGE%20New%20Basket%20Fund&no_note=0&currency_code=USD&bn=PP%2dDonationsBF%3abtn_donateCC_LG%2egif%3aNonHostedGuest)
+[![](https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif)](https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=weltong0001%40gmail%2ecom&lc=US&item_name=EDGE%20New%20Basket%20Fund&no_note=0&currency_code=USD&bn=PP%2dDonationsBF%3abtn_donateCC_LG%2egif%3aNonHostedGuest)
 
-http://edge.byethost18.com/demo/contribute.html
