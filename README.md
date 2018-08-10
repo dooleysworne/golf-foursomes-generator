@@ -17,6 +17,8 @@ Managing the players list is done by clicking the hyperlinked asterisk at the bo
 
 As a bonus, a doubles team randomizer is included. If there happens to be an odd number of players, the odd man out typically plays what is called "Cali", meaning that he/she plays as an individual, but is alloted on additional throw per hole without penalty. See https://www.discgolfscene.com/post/328840/cali-rules
 
+I'm sure a better programmer could churn out some much cleaner code, but hey! . . . it works and we've been using it with great success. It sure beats the heck out of flipping discs and picking cards from a deck.
+
 We are trying to raise money to replace the 15+ year old baskets at the disc golf course in our local park. If you like this little web app and you'd like to show your appreciation, you can help us by kicking in a small contribution toward our goal.
 
 Please consider a PayPal donation.
