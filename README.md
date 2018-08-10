@@ -15,7 +15,7 @@ The username and password can be changed by editing the userauth.php script.
 
 Managing the players list is done by clicking the hyperlinked asterisk at the bottom left of the foursomes.php screen.
 
-As a bonus, a doubles team randomizer is included. If there happens to be an odd number of players, the odd man out typically plays what is called "Cali", meaning that he/she plays as an individual, but is alloted on additional throw per hole without penalty. See https://www.discgolfscene.com/post/328840/cali-rules
+As a bonus, a doubles team randomizer is included. If there happens to be an odd number of players, the odd man out typically plays what is called "Cali", meaning that he/she plays as an individual, but is alloted an additional throw per hole without penalty. See https://www.discgolfscene.com/post/328840/cali-rules
 
 I'm sure a better programmer could churn out some much cleaner code, but hey! . . . it works and we've been using it with great success. It sure beats the heck out of flipping discs and picking cards from a deck.
 
