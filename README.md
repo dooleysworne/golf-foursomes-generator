@@ -17,7 +17,9 @@ Managing the players list is done by clicking the hyperlinked asterisk at the bo
 
 As a bonus, a doubles team randomizer is included. If there happens to be an odd number of players, the odd man out typically plays what is called "Cali", meaning that he/she plays as an individual, but is alloted on additional throw per hole without penalty. See https://www.discgolfscene.com/post/328840/cali-rules
 
-We are trying to raise money to replace the 15+ year old baskets at the course in our local park. If you'd like to help us by kicking in a small contribution toward that goal, please consider a PayPal donation.
+We are trying to raise money to replace the 15+ year old baskets at the course in our local park. If you like this little web app and you'd like to show your appreciation, you can help us by kicking in a small contribution toward our goal.
+
+Please consider a PayPal donation.
 
 [![](https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif)](https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=weltong01%40gmail%2ecom&lc=US&item_name=EDGE%20New%20Basket%20Fund&no_note=0&currency_code=USD&bn=PP%2dDonationsBF%3abtn_donateCC_LG%2egif%3aNonHostedGuest)
 
