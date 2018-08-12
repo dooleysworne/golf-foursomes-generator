@@ -3,9 +3,7 @@ A web-based foursomes/threesomes random generator for disc golf leagues (or regu
 
 After years of "flipping discs" and using a deck of playing cards to determine what the foursomes (and threesomes) were going to be at our Sunday afternoon league outings, I decided to see if I could develop a mobile-friendly web application that would allow us to select players as they showed up and let the programming randomly assign players to groups.
 
-The version we use is tied to a database-backed scoring system that we use, so the players are plucked from one of those data tables. 
-
-In this version, the players are entered and selected from a plain TXT file that is managed by someone in the league. When new players join the league, they're added to the players.txt file via the manage.php script.  If players show up just to play as a guest or as a visitor, there's a button at the top that allows them to be added for that day's session only.  Here's a demo that has the players.txt file set at read-only:
+In this little app, the players are entered and selected from a plain TXT file that is managed by someone in the league. When new players join the league, they're added to the players.txt file via the manage.php script.  If players show up just to play as a guest or as a visitor, there's a button at the top that allows them to be added for that day's session only.  Here's a demo that has the players.txt file set at read-only:
 
 http://edge.byethost18.com/demo/
 
