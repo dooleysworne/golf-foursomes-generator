@@ -17,6 +17,12 @@ As a bonus, a doubles team randomizer is included. If there happens to be an odd
 
 I'm sure a better programmer could churn out some much cleaner code, but hey! . . . it works and we've been using it with great success. It sure beats the heck out of flipping discs and picking cards from a deck.
 
+After watching the PGA Championship this weekend and noticing that they sent groups out in threesomes, I started working on a version that allows you to choose whether you want the groups in foursomes/threesomes or threesomes/twosomes:
+
+http://edge.byethost18.com/demo3
+
+When completed, it will simply be a tweak of the manage.php file and a dozen or so lines of code in the foursomes.php file.
+
 We are trying to raise money to replace the 15+ year old baskets at the disc golf course in our local park. If you like this little web app and you'd like to show your appreciation, you can help us by kicking in a small contribution toward our goal.
 
 Please consider a PayPal donation.
