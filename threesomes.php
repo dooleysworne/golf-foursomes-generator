@@ -1,7 +1,11 @@
-<?php //include("userauth.php"); ?>
+<?php //include("userauth.php"); 
+session_start();
+$SESSION["radios"] = $_REQUEST["radios"];
+$d=$SESSION["radios"];
+?>
 <html>
 <head>
-<title>Disc Golf Player Foursomes/Threesomes Randomizer</title>
+<title>Disc Golf Player Foursomes/Threesomes/Twosomes Randomizer</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -22,16 +26,60 @@ H4 {
 </style>
 </head>
 <body>
+<?php
+
+$radio_options = array('3' => 'Threesomes/Twosomes','4' => 'Foursomes/Threesomes',);
+
+if (count($_REQUEST, 1) > 0) {
+	unset($_SESSION['form']);
+
+foreach ($_REQUEST as $key=>$value) {
+	$_SESSION['form'][$key] = $value;
+}
+
+foreach ($_SESSION['form'] as $key=>$value) {
+	$$key = $value;
+	
+  }
+}
+?>
+
 <div class="w3-responsive w3-margin">
-[ Go To <a href="doubles.php" target="_blank">Doubles Randomizer</a> ]  [ Go To <a href="threesomes.php" target="_blank">4somes/3somes -or- 3somes/2somes</a> ]
-<H4>FOURSOMES/THREESOMES RANDOM GENERATOR</H4>
+[ Go To <a href="doubles.php" target="_blank">Doubles Randomizer</a> ]
+<H4>FOURSOMES/THREESOMES/TWOSOMES RANDOM GENERATOR</H4>
 <hr>
+<form name="form" method="REQUEST" action="<?php echo $_SESSION['PHP_SELF'] ?>">
+<table>
+<tr>
+<td valign="top"><b>Choose One</b></td>
+<td>
+<?php
+foreach ($radio_options as $k=>$v) {
+echo '<tr><td>' . $v . '</td><td>';
+if ($radios == $k) {
+echo '<input name="radios" type="radio" value="' . $k . '" checked="checked" />';
+}
+else {
+echo '<input name="radios" type="radio" value="' . $k . '" />';
+}
+echo '</td></tr>';
+}
+?>
+</table>
+</form>
+<?php 
+if($d != '') {
+echo "<fieldset>Your groups will have a maximimum number of " . $d . " players in them</fieldset>"; 
+}
+
+?>
 <?php
 if(!$_REQUEST["checkbox"]) {
 echo "<b>Use The Checkboxes Below To Select Players For Groups To Play Today</b>";
 echo "<fieldset>";
 ?>
-<form action="foursomes.php" method="REQUEST" id="panelone">
+<form name="form2" action="<?php echo $_SESSION['PHP_SELF'] ?>" method="REQUEST" id="panelone">
+<input name="max" type="hidden" value="<?php echo $d; ?>">
 
 <table border="0" class="w3-table-all">
 <tr class="w3-red">
@@ -85,6 +133,10 @@ echo "&nbsp;&nbsp;";
 echo "<button class='w3-button w3-red' onclick=\"myFunction()\">Mix This List Again</button>";
 echo "<br><br>\n";
 echo "</div>";
+if(!$_REQUEST["radios"] && $_REQUEST["max"]=='') {
+echo "<fieldset><b>Oops! Please Click the Reset Button and Select Threesomes/Twosomes or Foursomes/Threesomes First</fieldset>"; 
+die();
+}
 echo "<fieldset class='w3-responsive w3-margin'>";
 echo "<legend><b>RESULTS</b></legend>\n";
 
@@ -110,8 +162,11 @@ $howmany = count($players);
 
 echo "<i>There are ".$howmany." golfers arranged in ";
 
+if(!$_SESSION['$radios'] || $d = '') {
+$d = $_REQUEST['max'];
+}
 if($howmany<'6') { $numgroups = '1'; } else {
-$numgroups = ceil($howmany/4);
+$numgroups = ceil($howmany/$d);
 }
 echo $numgroups." groups</i><br/><br/>";
 
@@ -148,6 +203,11 @@ echo "</div>";
 function myFunction() {
     location.reload();
 }
+
+$('input[type=radio]').on('change', function() {
+    $(this).closest("form").submit();
+});
+
 </script>
 
 <script>
