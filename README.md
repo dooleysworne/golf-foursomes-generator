@@ -21,7 +21,7 @@ After watching the PGA Championship this weekend and noticing that they sent gro
 
 http://edge.byethost18.com/demo3
 
-When completed, it will simply be a tweak of the manage.php file and a dozen or so lines of code in the foursomes.php file.
+You'll find a link at the top of the foursomes.php script. It will open a new tab or window with a threesomes.php panel. At the top of this script you'll see a pair of radio buttons that allow a selection of foursomes/threesomes or threesomes/twosomes. If you don't select one or the other, the script will politely chastise you, tell you to reset the panel and start again.
 
 We are trying to raise money to replace the 15+ year old baskets at the disc golf course in our local park. If you like this little web app and you'd like to show your appreciation, you can help us by kicking in a small contribution toward our goal.
 
