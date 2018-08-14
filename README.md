@@ -5,7 +5,7 @@ After years of "flipping discs" and using a deck of playing cards to determine w
 
 In this little app, the players are entered and selected from a plain TXT file that is managed by someone in the league. When new players join the league, they're added to the players.txt file via the manage.php script.  If players show up just to play as a guest or as a visitor, there's a button at the top that allows them to be added for that day's session only.  Here's a demo that has the players.txt file set at read-only:
 
-http://edge.byethost18.com/demo/
+http://edge.byethost18.com/demo3/
 
 All you have to do is download the files in this collection, place them in a directory on a server, make the players.txt file writeable by the server and you're in business. If you uncomment the first line in the manage.php file, you can turn on a very basic user authorization function that will challenge anyone who tries to manipulate the players list. The default username is "disc" and the default password is "golf".
 
@@ -17,7 +17,7 @@ As a bonus, a doubles team randomizer is included. If there happens to be an odd
 
 I'm sure a better programmer could churn out some much cleaner code, but hey! . . . it works and we've been using it with great success. It sure beats the heck out of flipping discs and picking cards from a deck.
 
-After watching the PGA Championship this weekend and noticing that they sent groups out in threesomes, I started working on a version that allows you to choose whether you want the groups in foursomes/threesomes or threesomes/twosomes:
+After watching the PGA Championship recently and noticing that they sent groups out in threesomes, I started working on a version that allows you to choose whether you want the groups in foursomes/threesomes or threesomes/twosomes:
 
 http://edge.byethost18.com/demo3
 
