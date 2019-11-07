@@ -19,50 +19,50 @@ $err_msg = "
 	</head>
 	<body style='font-size: 11px\; font-family: Tahoma, Arial, sans-serif\;'>
 	<h2>Invalid Username/Password Entered</h2>
-	<p>You must enter your username and password. If you do not have a valid
-	username and password, you probably shouldn't be here.</p>
+	<p>You must enter your username and password. If you do not have a valid 
+	username and password, you should not be here.</p>
 	</body>
 	</html>
 	";
 
-#function to handle rejecting users
+//function to handle rejecting users
 	
 function auth_reject()
 	{
 		global $err_msg, $realm;
-		Header("HTTP/1.0 401 Unauthorized");
-		Header("WWW-Authenticate: Basic realm=\"$realm\"");
-		print "<b>" . $err_msg . "</b>";
-		exit();
+		header('WWW-Authenticate: Basic realm=\"$realm\"');
+		header('HTTP/1.0 401 Unauthorized');
+		echo "<b>" . $err_msg . "</b>";
+		exit;
 	}
 	
-# check to see if username is set
+// check to see if username is set
 	
 	if (!isset($PHP_AUTH_USER))
 		{
 		auth_reject();
 		}
 	
-# check to see if password is set
+// check to see if password is set
 	
 	if (!isset($PHP_AUTH_PW))
 	{
 		auth_reject();
 	}
 	
-# check username
+// check username
 	
 	if ($PHP_AUTH_USER != $username)
 	{
 		auth_reject();
 	}
 	
-# check password
+// check password
 	
 	if ($PHP_AUTH_PW != $passwd)
 	{
 		auth_reject();
 	}
 
-# If we make it this far, the user is good to go...
+// If we make it this far, the user is good to go...
 ?>
