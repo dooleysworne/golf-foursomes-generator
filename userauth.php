@@ -1,4 +1,4 @@
-<?
+<?php
 //-------------------------------------------------------------------------
 // Some very basic variable assignments
 
@@ -16,9 +16,8 @@
 $err_msg = "
 	<html>
 	<head><title>Invalid Username/Password Entered</title>
-	<link rel=\"stylesheet\" href=\"mystyle.css\" type=\"text/css\">
 	</head>
-	<body>
+	<body style='font-size: 11px\; font-family: Tahoma, Arial, sans-serif\;'>
 	<h2>Invalid Username/Password Entered</h2>
 	<p>You must enter your username and password. If you do not have a valid
 	username and password, you probably shouldn't be here.</p>
