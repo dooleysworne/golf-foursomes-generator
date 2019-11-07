@@ -1,7 +1,7 @@
 <?php //include("userauth.php"); ?>
 <html>
 <head>
-<title>Disc Golf Player Doubles Randomizer</title>
+<title>Golf League Doubles Teams Randomizer</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -25,8 +25,8 @@ H4 {
 </style>
 </div>
 <div class="w3-responsive w3-margin">
-[ Go To <a href="foursomes.php" target="_blank">Foursomes/Threesomes Random Generator</a> ]
-<H4>DOUBLES TEAMS RANDOMIZER</H4>
+[ Go To <a href="foursomes.php">Foursomes/Threesomes Random Generator</a> ]
+<H4>GOLF LEAGUE DOUBLES TEAMS RANDOMIZER</H4>
 <hr>
 <?php
 
@@ -49,7 +49,7 @@ $enclosure = '"';
 $row = file('players.txt', FILE_IGNORE_NEW_LINES);
     $num = count($row);
 
-//echo "There are ".$num." players in the listing<br/>";
+echo "There are ".$num." players in the listing<br/>";
 
 foreach ($row as $key => $value) {
     $csv[$key] = str_getcsv($value,$enclosure);
@@ -132,10 +132,15 @@ echo "</div>";
 }
 ?>
 </body>
+
+<script src="pulltorefresh.js"></script>
 <script>
-function myFunction() {
-    location.reload();
-}
+/* global PullToRefresh */
+
+var ptr = PullToRefresh.init({
+  mainElement: 'body',
+  onRefresh: function(){ window.location.reload(); }
+});
 
 var max_fields      = 16;
 var wrapper         = $(".input_fields_wrap");

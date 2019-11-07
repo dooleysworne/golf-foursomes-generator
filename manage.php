@@ -1,7 +1,7 @@
-<?php //include("userauth.php"); ?>
+<?php include("userauth.php"); ?>
 <html>
 <head>
-<title>Disc Golf Foursomes/Threesomes Player Manager</title>
+<title>Golf League Foursomes/Threesomes Generator ~ Manager</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <style>
@@ -17,7 +17,7 @@ H4 {
 <body>
 <div class="w3-responsive w3-margin-left">
 <!--<img src="logo.png">-->
-<H4>FOURSOMES/THREESOMES GENERATOR ~ MANAGER</H4>
+<H4>GOLF LEAGUE FOURSOMES/THREESOMES GENERATOR ~ MANAGER</H4>
 <?php
 $players = $_REQUEST["players"];
 $csvfile = 'players.txt';
@@ -75,7 +75,14 @@ echo "</div>";
 <h5>HIGHLY RECOMMENDED:</h5>
 <div>We highly recommend that you copy and save your club or league player list to a plain text file on your local computer. Please don't use a word processor. Use a text editor like Windows Notepad, Editpad Lite (<a href="https://www.editpadlite.com/" target="_blank">https://www.editpadlite.com/</a>) or even Online Editpad (<a href="https://www.editpad.org/" target="_blank">https://www.editpad.org/</a>).  That way, if you would happen to accidently delete the player list above, you can restore it from your saved text file.
 </body>
+<script src="pulltorefresh.js"></script>
 <script>
+/* global PullToRefresh */
+var ptr = PullToRefresh.init({
+  mainElement: 'body',
+  onRefresh: function(){ window.location.reload(); }
+});
+
 function myFunction() {
 // Reload the page keeping the REQUEST data
     location.reload();
